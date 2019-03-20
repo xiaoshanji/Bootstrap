@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>bootstrap</title>
+		<link href="js/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.container 
+			{
+				background-color: #eee;
+			}
+			
+			.container-fluid {
+				height: 300px;
+				background-color: red;
+			}
+			/*.col-sm-3
+			{
+				background-color: red;
+				margin-right: 5px;
+				margin-top: 5px;
+			}*/
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<p>小山鸡</p>
+			<!--
+            	作者：offline
+            	时间：2019-03-08
+            	描述：将一行分为4列，每列占3份
+            -->
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="col-md-6" style="background-color: pink">1353</div>
+					<div class="col-md-6" style="background-color: green">1212.12</div>
+				</div>
+				<div class="col-sm-3">1231545</div>
+				<div class="col-sm-3">1231545</div>
+				<div class="col-sm-3">1231545</div>
+			</div>
+			<!--
+            	作者：offline
+            	时间：2019-03-08
+            	描述：根据屏幕的尺寸不同，呈现不同的栅格
+            -->
+			<div class="row">
+				<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+				<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+				<!-- Add the extra clearfix for only the required viewport -->
+				<div class="clearfix visible-xs-block"></div>
+
+				<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+				<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+			</div>
+			
+			<!--
+            	作者：offline
+            	时间：2019-03-08
+            	描述：在上面的布局上增加间隔
+            -->
+			<div class="row">
+				<div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+				<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+				<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+			</div>
+			
+			<!--
+            	作者：offline
+            	时间：2019-03-08
+            	描述：第一列于第二列之间间隔6列
+            -->
+			<dir class="row">
+				<div class="col-sm-3">shanji</div>
+				<div class="col-sm-3 col-sm-offset-6">xiaoshanji</div>
+			</dir>
+			
+			<!--
+            	作者：offline
+            	时间：2019-03-08
+            	描述：互换列的位置
+            -->
+			<div class="row">
+				<div class="col-sm-3 col-sm-push-9">56456</div>
+				<div class="col-sm-9 col-sm-pull-3">12315</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<p>小山鸡</p>
+		</div>
+
+		<script src="js/bootstrap-3.3.7/dist/jquery.min.js"></script>
+		<script src="js/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			//			$.getJSON("json/test.json","",function(data){
+			//				var str = "";
+			//				$.each(data.first, function(i,item) {
+			//					str += item.name + "<br />" + item.sex + "<br /><br />";
+			//				});
+			//				document.write(str);
+			//			})
+			//			$.ajax({
+			//				url : "json/test.json",
+			//				type : "get",
+			//				dataType : "json", 
+			//				success : function(data){
+			//					console.log(data);
+			//					console.log(data["first"][0]["name"]);
+			//				}
+			//			})
+		</script>
+	</body>
+
+</html>
